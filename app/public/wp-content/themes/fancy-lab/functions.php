@@ -22,7 +22,7 @@
  function fancyLabConfig() {
 	 register_nav_menus(array(
 		'fancy_nav_primary_menu' => 'Fancy Lab Main Menu',
-		'fancy_lab_secondary_menu' => 'Fancy Lab Secondary Menu'
+		'fancy_lab_footer_menu' => 'Fancy Lab Footer Menu'
 	 ));
  }
 

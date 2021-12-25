@@ -24,6 +24,36 @@
 		'fancy_nav_primary_menu' => 'Fancy Lab Main Menu',
 		'fancy_lab_footer_menu' => 'Fancy Lab Footer Menu'
 	 ));
+		// adding theme support for woocommerce
+	 add_theme_support('woocommerce', array(
+		 'thumbnail_image_width' => 255,
+		 'single_image_width' => 255,
+		 'product_grid' => array(
+			 'default_rows' => 10,
+			 'min_rows' => 5,
+			 'max_rows' => 10,
+			 'default_columns' => 1,
+			 'min_columns' => 1, // the options set here can be changed by the user from the appearance -> customize section of the backend
+			 'max_columns' => 6
+		 )
+	 ));
+	 // theme support for product page image gallery
+	 add_theme_support('wc-product-gallery-zoom');
+	 add_theme_support('wc-product-gallery-lightbox');
+	 add_theme_support('wc-product-gallery-slider');
+
+	 if ( ! isset( $content_width ) ) {
+		$content_width = 600;
+	}
+
+	 // Adding logo
+	 add_theme_support('custom_logo', array(
+		 'height' => 200,
+		 'width' => 280,
+		 'flex-height' => true,
+		 'flex-width' => true,
+		 'unlink-homepage-logo' => false
+	 ));
  }
 
  add_action('after_setup_theme', 'fancyLabConfig');

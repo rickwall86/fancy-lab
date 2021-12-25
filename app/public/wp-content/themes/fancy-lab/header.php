@@ -28,7 +28,7 @@
 			<section class="top-bar">
 				<div class="container">
 					<div class="row">
-						<div class="brand col-3">Logo</div>
+						<div class="brand col-3"><?php the_custom_logo(); ?></div>
 						<div class="second-column col-9">
 							<div class="acount">Account</div>
 							<nav class="main-menu"><?php wp_nav_menu(array(

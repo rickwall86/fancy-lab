@@ -56,4 +56,6 @@
 	 ));
  }
 
- add_action('after_setup_theme', 'fancyLabConfig');
+ add_action('after_setup_theme', 'fancyLabConfig', 0);
+
+require get_template_directory() . '/inc/wc-modifications.php';
